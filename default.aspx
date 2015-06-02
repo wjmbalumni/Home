@@ -1,70 +1,7 @@
-<html>
-<title>WJMB Alumni Association</title>
-<link rel="stylesheet" type="text/css" title="CSS" href="styles/style1.css" media="screen" />
-<head>
-<body>
-<!-- Begin Masthead -->
-	<div id="masthead">
-	    <p>
-			<a href="mailto:info@wjmbalumni.org?subject=WJMB%20Alumni%20Site%20Info&body=Please%20be%20sure%20to%20include%20your%20contact%20information.%20Thanks!">info@wjmbalumni.org</a><br />
-			WJMB Alumni Association<br />
-			P.O. Box 4993<br />
-			Austintown, Ohio 44515-4993
-		</p>
-	</div>
-	<!-- End Masthead -->
-	
-	<!-- Begin Page Content -->
-	<div id="page_content">
-	
-	<!-- Begin Sidebar -->
-		<div id="sidebar">
-			<ul>
-				<li><a href="calendar.aspx">
-				    <img src="images/picnic_sm.gif" style="border: none;"/>
-				    INFO
-				</a>
-				</li>
-				<!-- WM 6/5/13 Removed blog link, it is out of date and some files appear to be corrupt
-				<li><a href="http://www.wjmbalumni.org/blogengine"><img src="images/new.gif" alt="New!" style="border: none;" />Blog</a></li>
-				-->
-				<li>&nbsp;</li>
-				<li><a href="default.aspx">Home</a></li>
-				<!-- WM 6/5/13 Removed calendar/upcoming events link - will just post to default page, though facebook will likely be more updated
-				<li><a href="calendar.aspx">Upcoming Events</a></li>
-				-->
-				<li><a href="directory.aspx">Directory</a></li>
-				<li><a href="gallery.aspx">Photo Gallery</a></li>
-				<li><a href="meeting.aspx">Meeting</a></li>
-				<li><a href="board.aspx">Board</a></li>
-				<li><a href="membership.aspx">Membership</a></li>
-				<li><a href="Bylaws.aspx">Bylaws</a></li>
-				<!-- WM 6/5/13 Removed link - seems irrelevant, same info is on home/default page
-				<li><a href="who_we_are.aspx">Who We Are</a></li>
-				-->
-				<li>&nbsp;</li>
-				<!-- WM 6/5/13 Removed link - no relevant info
-				<li><a class="outsidelink" href="http://partnerpage.google.com/wjmbalumni.org" target="_blank">Google Partner Page<br />WJMB Alumni</a></li>
-				-->
-				<!-- WM 6/5/13 Removed link - domain/hosting no longer works
-				<li><a class="outsidelink" href="http://www.wjmb.org" target="_blank">WJMB Band Site</a></li>
-				-->
-				<li>
-					<img src="images/fb-link.png" alt="fb" style="border: none;" />
-					<a class="outsidelink" href="https://www.facebook.com/WJMBAlumniAssociation" target="_blank">WJMB Alumni</a>
-					<a class="outsidelink" href="https://www.facebook.com/squires.wjmb" target="_blank">WJMB</a>
-				</li>
-				
-			</ul>
-		</div>
-		<!-- End Sidebar -->
-		
-		<!-- BeginEditable Content -->
-		
-		<div id="content">
-		    <form id="form1" runat="server">
-            <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
-	
+<%@ Page Language="C#" MasterPageFile="~/wjmbalumni.master" AutoEventWireup="true" 
+    CodeFile="default.aspx.cs" Inherits="_default" Title="WJMB Alumni Association Home" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+
 <h3>
 	Welcome to the Home of the<br />
 	Warren Junior Military Band<br />
@@ -393,32 +330,5 @@
 -->
         
 	
-
-</asp:contentplaceholder>
-            </form>
-		</div>
-		<!-- EndEditable Content -->
-		
-    </div>
-	<!-- End Page Content -->
 	
-	<!-- Begin Footer -->
-	<div id="footer">
-		<p>
-			<a href="default.aspx">Home</a> | 
-			<a href="calendar.aspx">Calendar</a> |
-			<a href="directory.aspx">Directory</a> |
-			<a href="gallery.aspx">Photo Gallery</a> |
-			<a href="meeting.aspx">Meeting</a> |
-			<a href="board.aspx">Board</a>
-			<br />
-			Copyright © 2008-2010 WJMB Alumni Association. All Rights Reserved.
-		</p>		
-	</div>
-	<!-- End Footer -->
-	
-</div>
-<!-- End Container -->
-
-</body>
-</html>
+</asp:Content>
